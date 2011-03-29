@@ -51,7 +51,7 @@ report_warnings(_Warnings) -&gt;
 	<key>keyEquivalent</key>
 	<string>@b</string>
 	<key>name</key>
-	<string>Build</string>
+	<string>Compile</string>
 	<key>output</key>
 	<string>showAsHTML</string>
 	<key>scope</key>
