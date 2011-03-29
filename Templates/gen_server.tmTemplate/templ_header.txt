@@ -1,0 +1,8 @@
+%%%-------------------------------------------------------------------
+%%% File:      ${TM_NEW_FILE_BASENAME}.erl
+%%% @author    ${TM_FULLNAME} <${TM_MY_EMAIL}> [${TM_MY_WEBSITE}]
+%%% @copyright ${TM_YEAR} ${TM_FULLNAME}
+%%% @doc  
+%%%
+%%% @end  
+%%%
