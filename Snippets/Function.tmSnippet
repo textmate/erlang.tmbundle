@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:function} (${2:param})${3: when ${4:guard}} -&gt;$0</string>
+	<string>${1:function}(${2:param})${3: when ${4:guard}} -&gt;$0</string>
 	<key>keyEquivalent</key>
 	<string>^F</string>
 	<key>name</key>
