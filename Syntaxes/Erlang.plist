@@ -231,19 +231,36 @@
 		<key>comment</key>
 		<dict>
 			<key>begin</key>
-			<string>(%)</string>
+			<string>(^[ \t]+)?(?=%)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.comment.erlang</string>
+					<string>punctuation.whitespace.comment.leading.erlang</string>
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>$\n?</string>
-			<key>name</key>
-			<string>comment.line.erlang</string>
+			<string>(?!\G)</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>%</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.comment.erlang</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\n</string>
+					<key>name</key>
+					<string>comment.line.percentage.erlang</string>
+				</dict>
+			</array>
 		</dict>
 		<key>define-directive</key>
 		<dict>
