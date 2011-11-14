@@ -14,24 +14,94 @@
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>&lt;erl&gt;</string>
-			<key>captures</key>
+			<string>(^\s*)?(?=&lt;erl&gt;)</string>
+			<key>beginCaptures</key>
 			<dict>
-				<key>0</key>
+				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.embedded.erlang</string>
+					<string>punctuation.whitespace.embedded.leading.html</string>
 				</dict>
 			</dict>
+			<key>contentName</key>
+			<string>meta.embedded.erlang</string>
 			<key>end</key>
-			<string>&lt;/erl&gt;</string>
-			<key>name</key>
-			<string>source.erlang.embedded.html</string>
+			<string>(?!\G)(\s*\n)?</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.whitespace.embedded.trailing.html</string>
+				</dict>
+			</dict>
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>include</key>
+					<key>begin</key>
+					<string>(&lt;)(erl)(&gt;)</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>meta.tag.template.html</string>
+						</dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.tag.begin.html</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.tag.html</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.tag.end.html</string>
+						</dict>
+					</dict>
+					<key>contentName</key>
 					<string>source.erlang</string>
+					<key>end</key>
+					<string>((&lt;/))(erl)(&gt;)</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>meta.tag.template.html</string>
+						</dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.tag.begin.html</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>source.erlang</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.tag.html</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.tag.end.html</string>
+						</dict>
+					</dict>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>source.erlang</string>
+						</dict>
+					</array>
 				</dict>
 			</array>
 		</dict>
