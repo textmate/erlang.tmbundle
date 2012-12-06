@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleUUID</key>
+	<string>065A8821-DD83-4753-90E3-AA70EC12E150</string>
+	<key>command</key>
+	<string>if [[ ! -f "$TM_NEW_FILE" ]]; then
+  export TM_YEAR=`date +%Y`
+  export TM_DATE=`date +%Y-%m-%d`
+  if [ "$TM_MY_LICENSE" = "MIT" ]; then
+    LICENSE="templ_lic_MIT.txt"
+  else
+    LICENSE=""
+  fi
+  cat templ_header.txt "$LICENSE" templ_body.txt \
+  | perl -pe 's/\$\{([^}]*)\}/$ENV{$1}/g' &gt; "$TM_NEW_FILE"
+fi</string>
+	<key>extension</key>
+	<string>erl</string>
+	<key>name</key>
+	<string>application</string>
+	<key>scope</key>
+	<string>source.erlang</string>
+	<key>uuid</key>
+	<string>88C95C65-6BCA-4A9D-9444-A3B6B37BF068</string>
+</dict>
+</plist>
