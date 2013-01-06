@@ -74,6 +74,8 @@ report_warnings(_Warnings) -&gt;
 	</array>
 	<key>scope</key>
 	<string>source.erlang</string>
+	<key>semanticClass</key>
+	<string>process.build.erlang</string>
 	<key>uuid</key>
 	<string>C340B2B5-3B6A-4756-860A-9687F4B54259</string>
 	<key>version</key>
