@@ -424,7 +424,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>^\s*+(-)\s*+([a-z][a-zA-Z\d@_]*+)\s*+(\()</string>
+					<string>^\s*+(-)\s*+([a-z][a-zA-Z\d@_]*+)\s*+(\(?)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -444,7 +444,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>(\))\s*+(\.)</string>
+					<string>(\)?)\s*+(\.)</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -1332,7 +1332,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>(([a-z][a-zA-Z\d@_]*+|'[^']*+')|(_))\s*+(=)</string>
+					<string>(([a-z][a-zA-Z\d@_]*+|'[^']*+')|(_))\s*+(=|::)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>2</key>
@@ -2501,7 +2501,7 @@
 		<key>symbolic-operator</key>
 		<dict>
 			<key>match</key>
-			<string>\+\+|\+|--|-|\*|/=|/|=/=|=:=|==|=&lt;|=|&lt;-|&lt;|&gt;=|&gt;|!</string>
+			<string>\+\+|\+|--|-|\*|/=|/|=/=|=:=|==|=&lt;|=|&lt;-|&lt;|&gt;=|&gt;|!|::</string>
 			<key>name</key>
 			<string>keyword.operator.symbolic.erlang</string>
 		</dict>
