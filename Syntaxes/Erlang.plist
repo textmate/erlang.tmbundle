@@ -1438,7 +1438,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(integer|float|binary)|(signed|unsigned)|(big|little|native)|(unit)|(-)</string>
+					<string>(integer|float|binary|bytes|bitstring|bits)|(signed|unsigned)|(big|little|native)|(unit)|(-)</string>
 				</dict>
 			</array>
 		</dict>
