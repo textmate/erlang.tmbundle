@@ -25,6 +25,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#behaviour-directive</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#record-directive</string>
 		</dict>
 		<dict>
@@ -113,6 +117,46 @@
 					<string>constant.other.symbol.unquoted.erlang</string>
 				</dict>
 			</array>
+		</dict>
+		<key>behaviour-directive</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.directive.begin.erlang</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.directive.behaviour.erlang</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.parameters.begin.erlang</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.type.class.behaviour.definition.erlang</string>
+				</dict>
+				<key>5</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.parameters.end.erlang</string>
+				</dict>
+				<key>6</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.directive.end.erlang</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^\s*+(-)\s*+(behaviour)\s*+(\()\s*+([a-z][a-zA-Z\d@_]*+)\s*+(\))\s*+(\.)</string>
+			<key>name</key>
+			<string>meta.directive.behaviour.erlang</string>
 		</dict>
 		<key>binary</key>
 		<dict>
