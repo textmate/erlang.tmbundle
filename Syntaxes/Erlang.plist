@@ -25,6 +25,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#behaviour-directive</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#record-directive</string>
 		</dict>
 		<dict>
@@ -1373,6 +1377,7 @@
 				<dict>
 					<key>begin</key>
 					<string>(([a-z][a-zA-Z\d@_]*+|'[^']*+')|(_))\s*+(=|::)</string>
+<<<<<<< HEAD
 					<key>beginCaptures</key>
 					<dict>
 						<key>2</key>
@@ -1412,6 +1417,8 @@
 				<dict>
 					<key>begin</key>
 					<string>(([a-z][a-zA-Z\d@_]*+|'[^']*+')|(_))\s*+(=|::)</string>
+=======
+>>>>>>> 241739775510d209603f8fc95db6092a801c3df7
 					<key>beginCaptures</key>
 					<dict>
 						<key>2</key>

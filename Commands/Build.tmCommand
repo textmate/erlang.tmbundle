@@ -41,10 +41,17 @@ list_errors(R, F, [{Line,Mod,E}|Tail]) -&gt;
 list_errors(_, _, []) -&gt; ok.
 
 
-report_warnings([]) -&gt;
-    ok;
-report_warnings(_Warnings) -&gt;
-    io:format("&lt;b&gt;Warning:&lt;/b&gt;&lt;br&gt;&lt;br&gt;display of warnings not implemented yet ...").
+report_warnings([]) -&gt; ok;
+report_warnings(Warnings) -&gt;
+	io:format("&lt;br&gt;&lt;br&gt;&lt;b&gt;Warning:&lt;/b&gt;&lt;br&gt;&lt;br&gt;"),
+	[{FilePath, WarningsList}] = Warnings,
+	list_warnings(FilePath, WarningsList).
+
+
+list_warnings(_, []) -&gt; ok;
+list_warnings(F, [{Line,Mod,E}|Tail]) -&gt;
+    io:format("&lt;a style=\"color:orange\" href=\"txmt://open/?url=file://~s&amp;line=~p\"&gt;~s:~p: ~s&lt;/a&gt;&lt;br&gt;", [F, Line, F, Line, Mod:format_error(E)]),
+    list_warnings(F, Tail).
 </string>
 	<key>input</key>
 	<string>document</string>
