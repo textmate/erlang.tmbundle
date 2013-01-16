@@ -1377,48 +1377,6 @@
 				<dict>
 					<key>begin</key>
 					<string>(([a-z][a-zA-Z\d@_]*+|'[^']*+')|(_))\s*+(=|::)</string>
-<<<<<<< HEAD
-					<key>beginCaptures</key>
-					<dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>variable.other.field.erlang</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>variable.language.omitted.field.erlang</string>
-						</dict>
-						<key>4</key>
-						<dict>
-							<key>name</key>
-							<string>keyword.operator.assignment.erlang</string>
-						</dict>
-					</dict>
-					<key>end</key>
-					<string>(,)|(?=\})</string>
-					<key>endCaptures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.separator.class.record.erlang</string>
-						</dict>
-					</dict>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>#everything-else</string>
-						</dict>
-					</array>
-				</dict>
-				<dict>
-					<key>begin</key>
-					<string>(([a-z][a-zA-Z\d@_]*+|'[^']*+')|(_))\s*+(=|::)</string>
-=======
->>>>>>> 241739775510d209603f8fc95db6092a801c3df7
 					<key>beginCaptures</key>
 					<dict>
 						<key>2</key>
@@ -1772,14 +1730,14 @@
 							<key>name</key>
 							<string>punctuation.separator.integer-float.erlang</string>
 						</dict>
-						<key>3</key>
+						<key>2</key>
 						<dict>
 							<key>name</key>
 							<string>punctuation.separator.float-exponent.erlang</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>\d++(\.)\d++(([eE][\+\-])?\d++)?</string>
+					<string>\d++(\.)\d++([eE][\+\-]?\d++)?</string>
 					<key>name</key>
 					<string>constant.numeric.float.erlang</string>
 				</dict>
