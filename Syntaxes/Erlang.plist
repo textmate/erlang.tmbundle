@@ -1730,14 +1730,14 @@
 							<key>name</key>
 							<string>punctuation.separator.integer-float.erlang</string>
 						</dict>
-						<key>3</key>
+						<key>2</key>
 						<dict>
 							<key>name</key>
 							<string>punctuation.separator.float-exponent.erlang</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>\d++(\.)\d++(([eE][\+\-])?\d++)?</string>
+					<string>\d++(\.)\d++([eE][\+\-]?\d++)?</string>
 					<key>name</key>
 					<string>constant.numeric.float.erlang</string>
 				</dict>
