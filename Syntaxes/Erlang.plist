@@ -1947,7 +1947,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>16(#)\h++</string>
+					<string>16(#)[0-9A-Fa-f]++</string>
 					<key>name</key>
 					<string>constant.numeric.integer.hexadecimal.erlang</string>
 				</dict>
