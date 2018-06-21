@@ -24,7 +24,7 @@
 				</dict>
 			</dict>
 			<key>contentName</key>
-			<string>meta.embedded.erlang</string>
+			<string>meta.embedded.block.erlang</string>
 			<key>end</key>
 			<string>(?!\G)(\s*\n)?</string>
 			<key>endCaptures</key>
