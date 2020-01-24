@@ -13,7 +13,7 @@
 		<key>disableIndentCorrections</key>
 		<true/>
 		<key>increaseIndentPattern</key>
-		<string>^[^%]*(\b(if|case|receive|after|fun|try|catch|begin|query)\b(?!.*\b(end)\b.*))|(-&gt;(\s*%.*)?$)</string>
+		<string>^[^%]*(\b(if|case|receive|after|fun|try|catch|begin)\b(?!.*\b(end)\b.*))|(-&gt;(\s*%.*)?$)</string>
 		<key>indentOnPaste</key>
 		<string>simple</string>
 	</dict>

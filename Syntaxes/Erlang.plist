@@ -875,37 +875,6 @@
 						</dict>
 					</array>
 				</dict>
-				<dict>
-					<key>begin</key>
-					<string>\b(query)\b</string>
-					<key>beginCaptures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>keyword.control.query.erlang</string>
-						</dict>
-					</dict>
-					<key>end</key>
-					<string>\b(end)\b</string>
-					<key>endCaptures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>keyword.control.end.erlang</string>
-						</dict>
-					</dict>
-					<key>name</key>
-					<string>meta.expression.query.erlang</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>#everything-else</string>
-						</dict>
-					</array>
-				</dict>
 			</array>
 		</dict>
 		<key>function</key>
@@ -1489,7 +1458,7 @@
 		<key>keyword</key>
 		<dict>
 			<key>match</key>
-			<string>\b(after|begin|case|catch|cond|end|fun|if|let|of|query|try|receive|when)\b</string>
+			<string>\b(after|begin|case|catch|cond|end|fun|if|let|of|try|receive|when)\b</string>
 			<key>name</key>
 			<string>keyword.control.erlang</string>
 		</dict>
